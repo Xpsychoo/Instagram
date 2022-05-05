@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500&display=swap");
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Radio Canada', sans-serif;
+}
+
+body .fas {
+  cursor: pointer;
+}
+
+body .all_height {
+  min-height: 91.5vh;
+}
+
+.Main__section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20%;
+  min-width: 430px;
+  max-height: 430px;
+  min-height: 100%;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px black;
+          box-shadow: 0px 0px 8px black;
+}
+
+.Main__section .top-most-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .top-most-sec .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.Main__section .top-most-sec .username .fa-chevron-down {
+  padding: 2px 5px 0px;
+  font-size: 13px;
+}
+
+.Main__section .top-sec {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Main__section .top-sec #profilepicture {
+  border: 2px solid lightblue;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.Main__section .top-sec .follower-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 0px 14px;
+}
+
+.Main__section .top-sec .InBox {
+  padding: 5px;
+  text-align: center;
+}
+
+.Main__section .top-sec .InBox #postsCount,
+.Main__section .top-sec .InBox #followersCount,
+.Main__section .top-sec .InBox #followingCount {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Main__section .top-most-sec .boxx {
+  font-size: 13px;
+  margin-right: 5px;
+  padding: 3px 4px;
+  cursor: pointer;
+  color: black;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.Main__section .bio_name_sec {
+  padding: 0px 10px 10px;
+}
+
+.Main__section .bio_name_sec .name {
+  font-weight: 500;
+}
+
+.Main__section .spc {
+  padding: 0px 10px 10px;
+}
+
+.Main__section .edit_profile_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .edit_profile_sec .add_friend {
+  padding: 8px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+.Main__section .edit_profile_sec .EditProbtn {
+  background-color: #fff;
+  border: 0.5px solid #000;
+  padding: 5px 2em;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.Main__section .stories_saved_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Main__section .stories_saved_sec .img img {
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+
+.Main__section .stories_saved_sec .img {
+  width: 20%;
+}
+
+.Main__section .post_content {
+  padding: 1em 10px;
+}
+
+.Main__section .post_content .nav-pills {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .post_content .nav-pills .nav-link.active,
+.Main__section .post_content .nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  border-bottom: 0.5px solid black;
+}
+
+.Main__section .post_content .nav-link {
+  color: #a0a0a6;
+  margin: 0px 3em;
+  font-size: 16px;
+  padding: 2px 7px;
+  border-radius: 0px;
+}
+
+.Main__section .post_content .img__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .post_content .img__tab .img-row img {
+  width: 32%;
+  height: 8em;
+  margin: 2px 0px;
+}
+
+.Main__section .post_content .video_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .post_content .video_tab .video_box {
+  position: relative;
+  width: 30%;
+  height: 8em;
+  margin: 5px 4px;
+}
+
+.Main__section .post_content .video_tab .video_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.Main__section .post_content .video_tab .video_box::after {
+  content: '\f04b';
+  position: absolute;
+  top: 50%;
+  font-weight: 900;
+  color: #efefec;
+  font-family: "Font Awesome 5 Free";
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Main__section .post_content .tag__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Main__section .post_content .tag__sec .img-row img {
+  width: 32%;
+  height: 6em;
+  margin: 2px 0px;
+}
+
+.Main__section .Home__navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.Main__section .Home__navigation .nav-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .Home__navigation .nav-item {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Main__section .Home__navigation .imgproo {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.Main__section .Home__navigation .nav-pills {
+  background-color: #fff;
+}
+
+.Main__section .Home__navigation .nav-pills .nav-link {
+  color: grey;
+}
+
+.Main__section .Home__navigation .nav-pills .nav-link.active,
+.Main__section .Home__navigation .nav-pills .nav-pills .show > .nav-link {
+  color: #000;
+  background-color: transparent;
+}
+
+.Main__section .notification__section .top-seec {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+
+.Main__section .notification__section .notify__lists .list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.Main__section .notification__section .notify__lists .list__row .img-section {
+  width: 20%;
+}
+
+.Main__section .notification__section .notify__lists .list__row .img-section img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.Main__section .notification__section .notify__lists .list__row .Text__sec {
+  padding: 0px 0px 0px 10px;
+}
+/*# sourceMappingURL=style.css.map */
