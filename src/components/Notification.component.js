@@ -1,40 +1,19 @@
 import React from 'react'
 
-const NotificationComponent = () => {
+
+const NotificationComponent = ({ NotificationData }) => {
+  console.log(NotificationData);
+
   return (
-     <>
-        <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
-                <div className="list__row">
-                  <div className="img-section"><img src="images/saanviii.jpg" alt="" /></div>
-                  <div className="Text__sec">Lorem ipsum dolor, sit amet hrt consectetur adipisicing elit gsd.</div>
-                </div>
+    <>
+      {NotificationData.map((NotApiData) => {
+
+        return (<div className="list__row" key={NotApiData.id}>
+          <div className="img-section"><img src={NotApiData.image} alt="" /></div>
+          <div className="Text__sec">{NotApiData.Description} </div>
+        </div>
+        )
+      })}
     </>
   )
 }

@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NotificationComponent from './Notification.component';
+import HomeMenuComponent from './HomeMenu.js';
 import GridProfile from './ProfileGrid.component';
 import ProfileTopsec from './ProfileTopsec.component';
 import Video_component from './video_component';
 import Nav_tab from './nav_tab.component';
 import ProfileTagComponent from './ProfileTagComponent'
 import Stories_component from './Stories_component'
+import Notifications from '../Assets/Basics/NotificationApi';
+// import HomeMenuApi from '../Assets/Basics/HomemenuApi.js';
+
 
 export const InstaComponent = () => {
+  const [NotificationData, setNotificationData] = useState(Notifications);
+  // const [HomemenuData, setHomemenuData] = useState(HomeMenuApi);
+
+
   return (
     <>
          <div className="Main__section">
@@ -34,7 +42,7 @@ export const InstaComponent = () => {
 
             </div>
             <div className="post_content spc">
-              
+
 
               <Nav_tab />
               <div className="tab-content" id="pills-tabContent">
@@ -61,7 +69,7 @@ export const InstaComponent = () => {
             </div>
           </div>
           <div className="all_height tab-pane fade" id="insta-profile" role="tabpanel" aria-labelledby="insta-profile-tab">
-            Home
+           {/* <HomeMenuComponent HomemenuData = {HomemenuData}/> */}
           </div>
           <div className="all_height tab-pane fade" id="insta-Search" role="tabpanel" aria-labelledby="insta-Search-tab">
             Search
@@ -73,7 +81,7 @@ export const InstaComponent = () => {
               </div>
               <div className="notify__lists">
 
-                <NotificationComponent />
+                <NotificationComponent NotificationData = {NotificationData}/>
 
               </div>
             </div>

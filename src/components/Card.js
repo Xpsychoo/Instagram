@@ -16,7 +16,7 @@ const Card = ({ MenuData }) => {
         </div>
     )
 })}
-       
+    
 
     </>
   )

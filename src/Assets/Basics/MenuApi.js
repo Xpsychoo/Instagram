@@ -1,4 +1,4 @@
-const Menu = [
+const NotApiData = [
     {
     id: 1,
     image: "images/little-me.jpg",
@@ -27,5 +27,5 @@ const Menu = [
 },
 ];
 
-export default Menu;
+export default NotApiData;
 
