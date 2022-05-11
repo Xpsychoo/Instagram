@@ -30,12 +30,13 @@ body .all_height {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 20%;
   min-width: 430px;
+  width: 20%;
   max-height: 430px;
   min-height: 100%;
   overflow-y: scroll;
   background-color: #fff;
+  color: #000;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 8px black;
           box-shadow: 0px 0px 8px black;
@@ -46,7 +47,7 @@ body .all_height {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -65,6 +66,44 @@ body .all_height {
 .Main__section .top-most-sec .username .fa-chevron-down {
   padding: 2px 5px 0px;
   font-size: 13px;
+}
+
+.Main__section .top-most-sec .fas.fa-bars {
+  position: relative;
+}
+
+.Main__section .settingsSideMenu {
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 26px -7px black;
+          box-shadow: 0px 0px 26px -7px black;
+  top: 44px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.Main__section .settingsSideMenu li {
+  position: relative;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.Main__section .settingsSideMenu li::after {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 0.01px solid #00000021;
+  -webkit-box-shadow: 0px 0px 6px 0px black;
+          box-shadow: 0px 0px 6px 0px black;
+}
+
+.Main__section .settingsSideMenu li input[type="checkbox" i] {
+  cursor: pointer;
 }
 
 .Main__section .top-sec {
@@ -107,8 +146,7 @@ body .all_height {
   margin-right: 5px;
   padding: 3px 4px;
   cursor: pointer;
-  color: black;
-  border: 1px solid #000;
+  border: 1px solid;
   border-radius: 5px;
 }
 
@@ -135,13 +173,12 @@ body .all_height {
 
 .Main__section .edit_profile_sec .add_friend {
   padding: 8px;
-  border: 0.5px solid black;
+  border: 0.5px solid;
   border-radius: 5px;
 }
 
 .Main__section .edit_profile_sec .EditProbtn {
-  background-color: #fff;
-  border: 0.5px solid #000;
+  border: 0.5px solid;
   padding: 5px 2em;
   width: 85%;
   font-weight: 500;
@@ -160,6 +197,8 @@ body .all_height {
 .Main__section .stories_saved_sec .img img {
   border-radius: 50%;
   border: 2px solid grey;
+  width: 4em;
+  height: 4em;
 }
 
 .Main__section .stories_saved_sec .img {
@@ -179,8 +218,8 @@ body .all_height {
 .Main__section .post_content .nav-pills .nav-link.active,
 .Main__section .post_content .nav-pills .show > .nav-link {
   color: #000;
-  background-color: #fff;
-  border-bottom: 0.5px solid black;
+  background-color: transparent;
+  border-bottom: 0.5px solid;
 }
 
 .Main__section .post_content .nav-link {
@@ -200,7 +239,7 @@ body .all_height {
 }
 
 .Main__section .post_content .img__tab .img-row img {
-  width: 32%;
+  width: 30%;
   height: 8em;
   margin: 5px;
 }
@@ -243,6 +282,15 @@ body .all_height {
   display: flex;
 }
 
+.Main__section .post_content .tag__sec .img-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .Main__section .post_content .tag__sec .img-row img {
   width: 32%;
   height: 6em;
@@ -265,6 +313,7 @@ body .all_height {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 
 .Main__section .Home__navigation .nav-item {
@@ -285,10 +334,6 @@ body .all_height {
   width: 100%;
 }
 
-.Main__section .Home__navigation .nav-pills {
-  background-color: #fff;
-}
-
 .Main__section .Home__navigation .nav-pills .nav-link {
   color: grey;
 }
@@ -303,7 +348,7 @@ body .all_height {
   padding: 10px;
   font-size: 17px;
   font-weight: 500;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
 }
 
 .Main__section .notification__section .notify__lists .list__row {
@@ -317,15 +362,35 @@ body .all_height {
 }
 
 .Main__section .notification__section .notify__lists .list__row .img-section {
-  width: 20%;
+  width: 15%;
 }
 
 .Main__section .notification__section .notify__lists .list__row .img-section img {
   width: 100%;
+  max-height: 2.5em;
+  max-width: 2.5em;
   border-radius: 50%;
 }
 
 .Main__section .notification__section .notify__lists .list__row .Text__sec {
+  width: 85%;
   padding: 0px 0px 0px 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .Main__section {
+    min-width: 300px;
+    width: 100%;
+  }
+  .Main__section .post_content .nav-link {
+    margin: 0px 15px;
+  }
+  .Main__section .post_content .img__tab .img-row img {
+    width: 29%;
+    height: 6em;
+  }
+  .Main__section .post_content .video_tab .video_box {
+    height: 6em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

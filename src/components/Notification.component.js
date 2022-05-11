@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const NotificationComponent = ({ NotificationData }) => {
-  console.log(NotificationData);
 
   return (
     <>

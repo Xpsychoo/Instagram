@@ -8,22 +8,61 @@ import Nav_tab from './nav_tab.component';
 import ProfileTagComponent from './ProfileTagComponent'
 import Stories_component from './Stories_component'
 import Notifications from '../Assets/Basics/NotificationApi';
+import SearchComponent from './SearchComponent';
 // import HomeMenuApi from '../Assets/Basics/HomemenuApi.js';
 
 
 export const InstaComponent = () => {
   const [NotificationData, setNotificationData] = useState(Notifications);
-  // const [HomemenuData, setHomemenuData] = useState(HomeMenuApi);
 
+  const [MyStyle, setMyStyle] = useState({
+    color: '#292929',
+    backgroundColor: '#fff'
+  })
+   
+  const toggleStyle = () => {
+    if(MyStyle.color == '#fff'){
+    setMyStyle({
+      color: '#292929',
+      backgroundColor: '#fff'
+
+    })
+  }
+  else {
+    setMyStyle({
+      color: '#fff',
+      backgroundColor: '#292929'
+    })
+  }
+}
 
   return (
     <>
-         <div className="Main__section">
+      <div className="Main__section" style={MyStyle}>
         <div className="tab-content" id="insta-tabContent">
           <div className="all_height tab-pane fade show active" id="insta-home" role="tabpanel" aria-labelledby="insta-home-tab">
             <div className="top-most-sec">
               <p className="username">__xpsycho <i className="fas fa-chevron-down" /> </p>
-              <div className=" "><span style={{cursor: 'pointer'}} className="boxx fas fa-plus" /> <span className="fas fa-bars" /></div>
+              <div className=" "><span style={{ cursor: 'pointer' }} className="boxx fas fa-plus" /> <span data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" className="fas fa-bars" />
+              </div>
+            </div>
+            <div className="collapse" id="collapseExample">
+              <ul className='settingsSideMenu' style={MyStyle}>
+
+                <li>
+                  <div className="form-check form-switch">
+                    <input onChange={toggleStyle} className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark mode</label>
+                  </div>
+                </li>
+                <li>Settings</li>
+                <li>Archive</li>
+                <li>Your Activity</li>
+                <li>QR Code</li>
+                <li>Saved</li>
+                <li>Close Friends</li>
+                <li>Favourites</li>
+              </ul>
             </div>
 
             <ProfileTopsec />
@@ -33,7 +72,7 @@ export const InstaComponent = () => {
               <p className="bio-under"> Loading... </p>
             </div>
             <div className="edit_profile_sec spc">
-              <button className="EditProbtn"> Edit Profile</button>
+              <button className="EditProbtn" style={MyStyle}> Edit Profile</button>
               <span className="add_friend fas fa-user-plus" />
             </div>
             <div className="stories_saved_sec spc">
@@ -62,17 +101,17 @@ export const InstaComponent = () => {
                 </div>
                 <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
-                <ProfileTagComponent />
+                  <ProfileTagComponent />
 
                 </div>
               </div>
             </div>
           </div>
           <div className="all_height tab-pane fade" id="insta-profile" role="tabpanel" aria-labelledby="insta-profile-tab">
-           {/* <HomeMenuComponent HomemenuData = {HomemenuData}/> */}
+            {/* <HomeMenuComponent HomemenuData = {HomemenuData}/> */}
           </div>
           <div className="all_height tab-pane fade" id="insta-Search" role="tabpanel" aria-labelledby="insta-Search-tab">
-            Search
+            <SearchComponent />
           </div>
           <div className="all_height tab-pane fade" id="insta-Notification" role="tabpanel" aria-labelledby="insta-Notification-tab">
             <div className="notification__section">
@@ -81,7 +120,7 @@ export const InstaComponent = () => {
               </div>
               <div className="notify__lists">
 
-                <NotificationComponent NotificationData = {NotificationData}/>
+                <NotificationComponent NotificationData={NotificationData} />
 
               </div>
             </div>
@@ -91,7 +130,7 @@ export const InstaComponent = () => {
           </div>
         </div>
         <div className="Home__navigation">
-          <ul className="nav nav-pills" id="insta-tab" role="tablist">
+          <ul className="nav nav-pills" id="insta-tab" role="tablist" style={MyStyle}>
             <li className="nav-item" role="presentation">
               <button className="nav-link" id="insta-profile-tab" data-bs-toggle="pill" data-bs-target="#insta-profile" type="button" role="tab" aria-controls="insta-profile" aria-selected="false"><i className="fas fa-home" /></button>
             </li>

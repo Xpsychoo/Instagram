@@ -7,7 +7,7 @@ const Stories_component = () => {
                 <img src="images/weeed.jpg" alt="" />
             </div>
             <div className="img">
-                <img src="images/saanviii.jpg" alt="" />
+                <img src="images/IMG_20191211_195032.jpg" alt="" />
             </div>
             <div className="img">
                 <img src="images/dps.jpg" alt="" />
