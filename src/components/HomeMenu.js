@@ -1,12 +1,11 @@
 import React from 'react'
 
-const HomeMenuComponent = ({ HomeMenuData }) => {
-    console.log(HomeMenuData);
+const HomeMenuComponent = ({ HomemenuData }) => {
 
   return (
     <>
 
-{HomeMenuData.map((HomeApiData) => {
+{HomemenuData.map((HomeApiData) => {
 
 return (<div className="list__row" key={HomeApiData.id}>
   <div className="img-section"><img src={HomeApiData.image} alt="" /></div>
@@ -14,7 +13,7 @@ return (<div className="list__row" key={HomeApiData.id}>
 </div>
 )
 })}
-    </>
+    </> 
   )
 }
 

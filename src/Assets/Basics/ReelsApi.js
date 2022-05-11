@@ -1,5 +1,5 @@
 
-const HomemenuApi =[
+const ReelsAPI =[
     {
         id: 1,
         image: "images/dps.jpg",
@@ -35,4 +35,4 @@ const HomemenuApi =[
         Description: 'Lorem27 And 78 other Have Requested To Follow You.',
     },
     ];
-export default HomemenuApi
+export default ReelsAPI;

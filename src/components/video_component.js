@@ -1,22 +1,19 @@
 import React from 'react'
 
-const Video_component = () => {
+const Video_component = ({ videoMenuData }) => {
     return (
         <>
-            <div className="video_box">
-                <img src="images/clg_campus.png" alt="" />
-            </div>
-            <div className="video_box">
-                <img src="images/dps.jpg" alt="" />
-            </div>
-            <div className="video_box">
-                <img src="images/little-me.jpg" alt="" />
-            </div>
-            <div className="video_box">
-                <img src="images/weeed.jpg" alt="" />
-            </div>
+
+            {videoMenuData.map((videoApiData) => {
+
+                return (<div className="list__row" key={videoApiData.id}>
+                    <div className="img-section"><img src={videoApiData.image} alt="" /></div>
+                    <div className="Text__sec">{videoApiData.Description} </div>
+                </div>
+                )
+            })}
         </>
     )
 }
 
-export default Video_component
+export default Video_component;

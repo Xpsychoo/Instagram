@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NotificationComponent from './Notification.component';
 import HomeMenuComponent from './HomeMenu.js';
+import ReelsComponent from './ReelsComponent.js';
 import GridProfile from './ProfileGrid.component';
 import ProfileTopsec from './ProfileTopsec.component';
 import Video_component from './video_component';
@@ -8,12 +9,19 @@ import Nav_tab from './nav_tab.component';
 import ProfileTagComponent from './ProfileTagComponent'
 import Stories_component from './Stories_component'
 import Notifications from '../Assets/Basics/NotificationApi';
+import SearchApiData from '../Assets/Basics/SearchApi';
+import videoApi from '../Assets/Basics/videoApi';
+import ReelsAPI from '../Assets/Basics/ReelsApi';
 import SearchComponent from './SearchComponent';
-// import HomeMenuApi from '../Assets/Basics/HomemenuApi.js';
+import HomemenuApi from '../Assets/Basics/HomeMenuApi';
 
 
 export const InstaComponent = () => {
   const [NotificationData, setNotificationData] = useState(Notifications);
+  const [HomemenuData, setHomemenuData] = useState(HomemenuApi);
+  const [SearchData, setSearchData] = useState(SearchApiData);
+  const [videoMenuData, setvideoMenuData] = useState(videoApi);
+  const [ReelsVideoData, setReelsVideoData] = useState(ReelsAPI);
 
   const [MyStyle, setMyStyle] = useState({
     color: '#292929',
@@ -95,7 +103,7 @@ export const InstaComponent = () => {
                 <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <div className="video_tab">
 
-                    <Video_component />
+                    <Video_component videoMenuData= {videoMenuData}/>
 
                   </div>
                 </div>
@@ -108,10 +116,10 @@ export const InstaComponent = () => {
             </div>
           </div>
           <div className="all_height tab-pane fade" id="insta-profile" role="tabpanel" aria-labelledby="insta-profile-tab">
-            {/* <HomeMenuComponent HomemenuData = {HomemenuData}/> */}
+            <HomeMenuComponent HomemenuData={HomemenuData}/>
           </div>
           <div className="all_height tab-pane fade" id="insta-Search" role="tabpanel" aria-labelledby="insta-Search-tab">
-            <SearchComponent />
+            <SearchComponent SearchData={SearchData} />
           </div>
           <div className="all_height tab-pane fade" id="insta-Notification" role="tabpanel" aria-labelledby="insta-Notification-tab">
             <div className="notification__section">
@@ -126,7 +134,7 @@ export const InstaComponent = () => {
             </div>
           </div>
           <div className="all_height tab-pane fade" id="insta-contact" role="tabpanel" aria-labelledby="insta-contact-tab">
-            Video
+            <ReelsComponent ReelsVideoData = {ReelsVideoData} />
           </div>
         </div>
         <div className="Home__navigation">
