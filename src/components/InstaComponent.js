@@ -13,7 +13,7 @@ import SearchApiData from '../Assets/Basics/SearchApi';
 import videoApi from '../Assets/Basics/videoApi';
 import ReelsAPI from '../Assets/Basics/ReelsApi';
 import SearchComponent from './SearchComponent';
-import HomemenuApi from '../Assets/Basics/HomeMenuApi';
+import HomemenuApi from '../Assets/Basics/HomeMenuArr';
 
 
 export const InstaComponent = () => {
