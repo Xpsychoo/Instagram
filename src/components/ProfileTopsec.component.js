@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProfileTopsec = () => {
 
-    const counters = document.querySelectorAll('.counter');
+   /*  const counters = document.querySelectorAll('.counter');
 
     counters.forEach((counter) => {
         console.log(counter);
@@ -20,26 +20,27 @@ const ProfileTopsec = () => {
                 setTimeout(updateCounter, 100)
             }
         }
+        onLoad={counters}
 
         updateCounter();
-    })
+    }) */
     return (
         <>
-            <div onLoad={counters} className="top-sec">
+            <div className="top-sec">
                 <div className="img-seec">
-                    <img id="profilepicture" src="images/weeed.jpg" alt="profile-picture" />
+                    <img id="profilepicture" src="images/weeed.jpg" alt="profile" />
                 </div>
                 <div className="follower-sec">
                     <div className="InBox">
-                        <div data-target={270} className="counter" id="postsCount" />
+                        <div className="counter" id="postsCount" >27</div>
                         <p>posts</p>
                     </div>
                     <div className="InBox">
-                        <div data-target={99990} className="counter" id="followersCount" />
+                        <div className="counter" id="followersCount" >997k</div>
                         <p>Followers</p>
                     </div>
                     <div className="InBox">
-                        <div data-target={270} className="counter" id="followingCount" />
+                        <div className="counter" id="followingCount" >3</div>
                         <p>Following</p>
                     </div>
                 </div>

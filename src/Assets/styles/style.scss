@@ -339,7 +339,51 @@ body {
             }
         }
     }
-}
+
+    .list__row_Home{
+        padding: 10px;
+
+
+        .img-section{
+
+            img{
+                width: 100%;
+            }
+        }
+        .like--sec{
+            .fa-heart{
+                color: red;
+                font-size: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .Search_row_Component{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        flex-wrap: wrap;
+
+        .Search_component{
+            width: 33%;
+    
+            .img-section{
+                width: 100%;
+                padding: 2px;
+                overflow: hidden;
+                
+                img{
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 8em;
+                    max-height: 8em;
+                }
+            }
+        }
+    }
+    }
+
 
 @media only screen and (max-width: 400px) {
     .Main__section {

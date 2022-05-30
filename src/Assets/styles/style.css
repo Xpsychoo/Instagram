@@ -377,6 +377,50 @@ body .all_height {
   padding: 0px 0px 0px 10px;
 }
 
+.Main__section .list__row_Home {
+  padding: 10px;
+}
+
+.Main__section .list__row_Home .img-section img {
+  width: 100%;
+}
+
+.Main__section .list__row_Home .like--sec .fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.Main__section .Search_row_Component {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .Search_row_Component .Search_component {
+  width: 33%;
+}
+
+.Main__section .Search_row_Component .Search_component .img-section {
+  width: 100%;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.Main__section .Search_row_Component .Search_component .img-section img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 8em;
+  max-height: 8em;
+}
+
 @media only screen and (max-width: 400px) {
   .Main__section {
     min-width: 300px;

@@ -119,7 +119,8 @@ export const InstaComponent = () => {
             <HomeMenuComponent HomemenuData={HomemenuData}/>
           </div>
           <div className="all_height tab-pane fade" id="insta-Search" role="tabpanel" aria-labelledby="insta-Search-tab">
-            <SearchComponent SearchData={SearchData} />
+          <div className="Search_row_Component"><SearchComponent SearchData={SearchData} /></div>
+            
           </div>
           <div className="all_height tab-pane fade" id="insta-Notification" role="tabpanel" aria-labelledby="insta-Notification-tab">
             <div className="notification__section">

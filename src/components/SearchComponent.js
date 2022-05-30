@@ -6,9 +6,9 @@ function SearchComponent({SearchData}) {
 
 {SearchData.map((SearchApiData) => {
 
-return (<div className="list__row" key={SearchApiData.id}>
-  <div className="img-section"><img src={SearchApiData.image} alt="" /></div>
-  <div className="Text__sec">{SearchApiData.Description} </div>
+return (
+  <div className="Search_component" key={SearchApiData.id}>
+   <div className="img-section"><img src={SearchApiData.image} alt="" /></div>
 </div>
 )
 })}
