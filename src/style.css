@@ -1,0 +1,59 @@
+.navbar {
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+}
+.navbar-brand {
+    cursor: pointer;
+    color: yellow;
+}
+.navbar .nav-link{
+    cursor: pointer;
+    color: white;
+}
+.navbar-nav{
+    flex-direction: row;
+}
+.navbar-nav li {
+    margin: 0em 1em;
+}
+.box-main{
+    flex-wrap: wrap;
+}
+.box-1-head{
+    padding: 1em;
+}
+.box-main .card {
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    width: 35em;
+    height: 17em;
+    margin: 1em;
+
+}
+.footer{
+    padding: 1em 4em;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer div{
+    padding: 2em;
+}
+#intro {
+    background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+    height: 100vh;
+  }
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
+  }

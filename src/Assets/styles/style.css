@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500&display=swap");
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Radio Canada', sans-serif;
+}
+
+body .fas {
+  cursor: pointer;
+}
+
+body .all_height {
+  min-height: 91.5vh;
+}
+
+.Main__section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 430px;
+  width: 20%;
+  max-height: 430px;
+  min-height: 100%;
+  overflow-y: scroll;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px black;
+          box-shadow: 0px 0px 8px black;
+}
+
+.Main__section .top-most-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .top-most-sec .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.Main__section .top-most-sec .username .fa-chevron-down {
+  padding: 2px 5px 0px;
+  font-size: 13px;
+}
+
+.Main__section .top-most-sec .fas.fa-bars {
+  position: relative;
+}
+
+.Main__section .settingsSideMenu {
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 26px -7px black;
+          box-shadow: 0px 0px 26px -7px black;
+  top: 44px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.Main__section .settingsSideMenu li {
+  position: relative;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.Main__section .settingsSideMenu li::after {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 0.01px solid #00000021;
+  -webkit-box-shadow: 0px 0px 6px 0px black;
+          box-shadow: 0px 0px 6px 0px black;
+}
+
+.Main__section .settingsSideMenu li input[type="checkbox" i] {
+  cursor: pointer;
+}
+
+.Main__section .top-sec {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Main__section .top-sec #profilepicture {
+  border: 2px solid lightblue;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.Main__section .top-sec .follower-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 0px 14px;
+}
+
+.Main__section .top-sec .InBox {
+  padding: 5px;
+  text-align: center;
+}
+
+.Main__section .top-sec .InBox #postsCount,
+.Main__section .top-sec .InBox #followersCount,
+.Main__section .top-sec .InBox #followingCount {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Main__section .top-most-sec .boxx {
+  font-size: 13px;
+  margin-right: 5px;
+  padding: 3px 4px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.Main__section .bio_name_sec {
+  padding: 0px 10px 10px;
+}
+
+.Main__section .bio_name_sec .name {
+  font-weight: 500;
+}
+
+.Main__section .spc {
+  padding: 0px 10px 10px;
+}
+
+.Main__section .edit_profile_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .edit_profile_sec .add_friend {
+  padding: 8px;
+  border: 0.5px solid;
+  border-radius: 5px;
+}
+
+.Main__section .edit_profile_sec .EditProbtn {
+  border: 0.5px solid;
+  padding: 5px 2em;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.Main__section .stories_saved_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Main__section .stories_saved_sec .img img {
+  border-radius: 50%;
+  border: 2px solid grey;
+  width: 4em;
+  height: 4em;
+}
+
+.Main__section .stories_saved_sec .img {
+  width: 20%;
+}
+
+.Main__section .post_content {
+  padding: 1em 10px;
+}
+
+.Main__section .post_content .nav-pills {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .post_content .nav-pills .nav-link.active,
+.Main__section .post_content .nav-pills .show > .nav-link {
+  color: #000;
+  background-color: transparent;
+  border-bottom: 0.5px solid;
+}
+
+.Main__section .post_content .nav-link {
+  color: #a0a0a6;
+  margin: 0px 3em;
+  font-size: 16px;
+  padding: 2px 7px;
+  border-radius: 0px;
+}
+
+.Main__section .post_content .img__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .post_content .img__tab .img-row img {
+  width: 30%;
+  height: 8em;
+  margin: 5px;
+}
+
+.Main__section .post_content .video_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .post_content .video_tab .video_box {
+  position: relative;
+  width: 30%;
+  height: 8em;
+  margin: 5px 4px;
+}
+
+.Main__section .post_content .video_tab .video_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.Main__section .post_content .video_tab .video_box::after {
+  content: '\f04b';
+  position: absolute;
+  top: 50%;
+  font-weight: 900;
+  color: #efefec;
+  font-family: "Font Awesome 5 Free";
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Main__section .post_content .tag__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Main__section .post_content .tag__sec .img-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Main__section .post_content .tag__sec .img-row img {
+  width: 32%;
+  height: 6em;
+  margin: 2px 0px;
+}
+
+.Main__section .Home__navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.Main__section .Home__navigation .nav-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.Main__section .Home__navigation .nav-item {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Main__section .Home__navigation .imgproo {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.Main__section .Home__navigation .nav-pills .nav-link {
+  color: grey;
+}
+
+.Main__section .Home__navigation .nav-pills .nav-link.active,
+.Main__section .Home__navigation .nav-pills .nav-pills .show > .nav-link {
+  color: #000;
+  background-color: transparent;
+}
+
+.Main__section .notification__section .top-seec {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 1px solid;
+}
+
+.Main__section .notification__section .notify__lists .list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.Main__section .notification__section .notify__lists .list__row .img-section {
+  width: 15%;
+}
+
+.Main__section .notification__section .notify__lists .list__row .img-section img {
+  width: 100%;
+  max-height: 2.5em;
+  max-width: 2.5em;
+  border-radius: 50%;
+}
+
+.Main__section .notification__section .notify__lists .list__row .Text__sec {
+  width: 85%;
+  padding: 0px 0px 0px 10px;
+}
+
+.Main__section .list__row_Home {
+  padding: 10px;
+}
+
+.Main__section .list__row_Home .img-section img {
+  width: 100%;
+}
+
+.Main__section .list__row_Home .like--sec .fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.Main__section .Search_row_Component {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main__section .Search_row_Component .Search_component {
+  width: 33%;
+}
+
+.Main__section .Search_row_Component .Search_component .img-section {
+  width: 100%;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.Main__section .Search_row_Component .Search_component .img-section img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 8em;
+  max-height: 8em;
+}
+
+@media only screen and (max-width: 400px) {
+  .Main__section {
+    min-width: 300px;
+    width: 100%;
+  }
+  .Main__section .post_content .nav-link {
+    margin: 0px 15px;
+  }
+  .Main__section .post_content .img__tab .img-row img {
+    width: 29%;
+    height: 6em;
+  }
+  .Main__section .post_content .video_tab .video_box {
+    height: 6em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
